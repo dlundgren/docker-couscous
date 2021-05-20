@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  couscous:
+    build:
+      context: .
+    volumes: 
+      - "./test:/project"
+    ports:
+      - "8000:8000"

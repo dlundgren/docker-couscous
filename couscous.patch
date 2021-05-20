@@ -1,0 +1,11 @@
+diff --ruN src-orig/Application/Cli/GenerateCommand.php src/Application/Cli/GenerateCommand.php
+--- src-orig/Application/Cli/GenerateCommand.php
++++ src/Application/Cli/GenerateCommand.php
+@@ -65,5 +65,7 @@ class GenerateCommand extends Command
+         $project->metadata['cliConfig'] = $cliConfig;
+ 
+         $this->generator->generate($project, $output);
++
++       return 0; 
+     }
+ }
